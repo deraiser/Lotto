@@ -1,0 +1,7 @@
+@mixin lottoBackgroundColor {
+    background-color: $wcfContentBackground;
+}
+
+@mixin lottoBorder($size) {
+    border: $size double $wcfContentBorderInner;
+}

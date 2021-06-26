@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS wcf1_lotto_ticket;
+CREATE TABLE wcf1_lotto_ticket (
+    ticketID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    userID INT(11) NOT NULL DEFAULT 0,
+    ticketNumber VARCHAR(10) NOT NULL DEFAULT '',
+    created INT(10) NOT NULL DEFAULT 0,
+    costCoins INT(10) NOT NULL DEFAULT 0,
+    winCoins INT(10) NOT NULL DEFAULT 0,
+    drawID INT(10) NULL
+);

@@ -1,0 +1,327 @@
+#lottoTicket {
+    @include lottoBackgroundColor;
+    @include lottoBorder(1px);
+
+    position: relative;
+    min-width: 656px;
+    max-width: 656px;
+    min-height: 300px;
+    max-height: 300px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 2px #cefa42;
+    -moz-box-shadow: 5px 5px 2px #cefa42;
+    box-shadow: 1px 1px 1px #000000;
+    margin-left: auto;
+    margin-right: auto;
+
+    .lottoHeader {
+        min-height: 50px;
+        background-image: url(../images/lotto/lottoTicketHeader.png);
+        background-position: center;
+    }
+
+    .lottoTicketField {
+        height: 215px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+
+        .lottoField {
+            @include lottoBorder(1px);
+
+            position: relative;
+            width: 95.3px;
+            height: 96px;
+            float: left;
+            margin-left: 4px;
+            margin-right: 4px;
+            margin-top: 6px;
+            cursor: pointer;
+            display: block;
+
+            &:hover {
+                border: 1px double #000000;
+            }
+
+            .lottoFieldBlock {
+                padding: 5px;
+            }
+
+            .lottoFieldBGNumber {
+                position: absolute;
+                width: 95.3px;
+                height: 96px;
+                line-height: 96px;
+                text-align: center;
+                color: #F9BD25;
+
+                span {
+                    font-size: 36px;
+                }
+            }
+
+            &.fieldDisabled {
+                opacity: .5;
+                cursor: default !important;
+
+                &:hover {
+                    @include lottoBorder(1px);
+                }
+            }
+
+            .lottoFields {
+                @include lottoBorder(1px);
+
+                position: relative;
+                display: block;
+                float: left;
+                width: 9px;
+                height: 9px;
+                margin: 0.1em;
+
+                &.selectedField {
+                    background-image: url('../images/lotto/selected.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 12px 12px;
+                }
+
+                &.selectedDrawField {
+                    background-color: rgba(255, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+
+    .lottoTicketFieldOption {
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .lottoTicketFieldShuffle {
+            flex: 1 1 auto;
+
+            span {
+                float: left;
+            }
+
+            ul {
+                margin-left: 100px;
+            }
+        }
+
+        .lottoTicketFieldRemove {
+            flex: 0 0 50px;
+            text-align: center;
+        }
+    }
+}
+
+#lottoContainer + form {
+    margin-top: 20px;
+}
+
+.lottoBlockField {
+    .lottoBlock {
+        @include lottoBackgroundColor;
+        @include lottoBorder(1px);
+
+        position: relative;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 320px;
+        max-height: 320px;
+        -webkit-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .lottoBlockField {
+            @include lottoBorder(1px);
+
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 5px;
+            display: block;
+            color: $wcfContentText;
+            cursor: pointer;
+
+            .lottoBlockFields {
+                @include lottoBorder(1px);
+
+                position: relative;
+                display: block;
+                float: left;
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+                margin: 0.1em;
+                text-align: center;
+                vertical-align: middle;
+
+                &:hover {
+                    background-color: $wcfNavigationBackground;
+                    
+                    span {
+                        color: $wcfNavigationLink;
+                        font-weight: 500;
+                    }
+                }
+
+                span {
+                    color: $wcfNavigationText;
+                }
+
+                &.selectedField {
+                    background-image: url('../images/lotto/selected.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .lottoBlockInfoCount {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.ticketNavigation {
+    @include screen-md-up {
+        > nav > ul {
+            display: flex;
+        }
+    }
+
+    .previousTicketButton,
+    .nextTicketButton {
+        display: flex;
+
+        @include screen-md-up {
+            flex: 0 0 50%;
+        }
+
+        > a {
+            color: $wcfContentText;
+            display: flex;
+
+            &::before {
+                align-self: center;
+                display: block;
+                flex: 0 0 auto;
+                font-family: FontAwesome;
+                font-size: 36px;
+            }
+
+            > div {
+                flex: 1 1 auto;
+            }
+
+            .ticketNavigationName,
+            .ticketNavigationTitle {
+                display: block;
+            }
+
+            .ticketNavigationName {
+                text-transform: uppercase;
+            }
+
+            .ticketNavigationTitle {
+                margin-top: 3px;
+
+                @include wcfFontHeadline;
+            }
+
+            &:hover {
+                &::before {
+                    color: $wcfContentLinkActive;
+                }
+
+                .ticketNavigationTitle {
+                    color: $wcfContentLinkActive;
+                }
+            }
+        }
+    }
+
+    .previousTicketButton {
+        @include screen-md-up {
+            padding-right: 10px;
+        }
+
+        > a {
+            &::before {
+                content: $fa-var-chevron-left;
+            }
+
+            > div {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .nextTicketButton {
+        justify-content: flex-end;
+        text-align: right;
+
+        @include screen-md-up {
+            margin-left: 50%;
+            padding-left: 10px;
+        }
+
+        > a {
+            &::before {
+                content: $fa-var-chevron-right;
+                order: 1;
+            }
+
+            > div {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .previousTicketButton + .nextTicketButton {
+        @include screen-sm-down {
+            margin-top: 20px;
+        }
+
+        @include screen-md-up {
+            margin-left: 0;
+        }
+    }
+}
+
+/* fix icons in rtl design */
+html[dir="rtl"] {
+    .ticketNavigation {
+        .previousTicketButton {
+            > a {
+                &::before {
+                    content: $fa-var-chevron-right;
+                }
+            }
+        }
+
+        .nextTicketButton {
+            > a {
+                &::before {
+                    content: $fa-var-chevron-left;
+                }
+            }
+        }
+    }
+}

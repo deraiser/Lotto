@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/objectType.xsd">
+    <import>
+        <!-- box controllers -->
+        <type>
+            <name>info.daries.lotto.jackpot</name>
+            <definitionname>com.woltlab.wcf.boxController</definitionname>
+            <classname>wcf\system\box\LottoJackpotBoxController</classname>
+        </type>
+        <type>
+            <name>info.daries.lotto.nextDraw</name>
+            <definitionname>com.woltlab.wcf.boxController</definitionname>
+            <classname>wcf\system\box\LottoNextDrawBoxController</classname>
+        </type>
+        <type>
+            <name>info.daries.lotto.ticketAdd</name>
+            <definitionname>com.woltlab.wcf.boxController</definitionname>
+            <classname>wcf\system\box\LottoTicketAddBoxController</classname>
+        </type>
+        <!-- /box controllers -->
+        
+        <!-- jcoins statement types -->
+        <type>
+            <name>info.daries.lotto.transfer</name>
+            <definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+            <editable>0</editable>
+            <classname>wcf\system\jcoins\statement\LottoTransferJCoinsStatement</classname>
+            <category>info.daries.lotto</category>
+            <objectClassName>wcf\data\lotto\ticket\LottoTicket</objectClassName>
+        </type>
+        <!-- /jcoins statement types -->
+        
+        <!-- notification -->
+        <type>
+            <name>info.daries.lotto.notification</name>
+            <definitionname>com.woltlab.wcf.notification.objectType</definitionname>
+            <classname>wcf\system\user\notification\object\type\LottoNotificationObjectType</classname>
+            <category>info.daries.lotto</category>
+        </type>
+        <!-- /notification -->
+        
+        
+        <!-- recentActivityEvent -->
+        <type>
+            <name>info.daries.lotto.recentActivityEvent.lottoAdd</name>
+            <definitionname>com.woltlab.wcf.user.recentActivityEvent</definitionname>
+            <classname>wcf\system\user\activity\event\LottoAddUserActivityEvent</classname>
+        </type>
+        <!-- /recentActivityEvent -->
+    </import>
+    
+    <delete>
+        <type name="info.daries.lotto.win.notification">
+            <definitionname>com.woltlab.wcf.notification.objectType</definitionname>
+        </type>
+    </delete>
+</data>

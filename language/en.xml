@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagecode="en" languagename="English" countrycode="en">
+    <category name="wcf.acp.box">
+        <item name="wcf.acp.box.boxController.info.daries.lotto.jackpot"><![CDATA[Lotto jackpot (Lotto)]]></item>
+        <item name="wcf.acp.box.boxController.info.daries.lotto.nextDraw"><![CDATA[Next draw (Lotto)]]></item>
+        <item name="wcf.acp.box.boxController.info.daries.lotto.ticketAdd"><![CDATA[Buy lottery ticket (Lotto)]]></item>
+    </category>
+    
+    <category name="wcf.acp.group">  
+        <item name="wcf.acp.group.option.category.user.lotto"><![CDATA[Lotto]]></item>
+        <item name="wcf.acp.group.option.user.lotto.add"><![CDATA[Can create new lottery ticket]]></item>
+        <item name="wcf.acp.group.option.user.lotto.add.description"><![CDATA[Members of this user group can create a new lottery ticket.]]></item>
+        <item name="wcf.acp.group.option.user.lotto.stats"><![CDATA[Can see lottery statistics]]></item>
+        <item name="wcf.acp.group.option.user.lotto.stats.description"><![CDATA[Members of this user group can see Lotto statistics.]]></item>
+        <item name="wcf.acp.group.option.user.lotto.view"><![CDATA[Can see lotto]]></item>
+        <item name="wcf.acp.group.option.user.lotto.view.description"><![CDATA[Members of this user group can see Lotto.]]></item>
+    </category>
+    
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.lotto"><![CDATA[Lotto]]></item>
+        <item name="wcf.acp.option.category.lotto.general"><![CDATA[Generally]]></item>
+        <item name="wcf.acp.option.category.lotto.general.jackpot"><![CDATA[Jackpot]]></item>
+        <item name="wcf.acp.option.category.lotto.jcoins"><![CDATA[Costs]]></item>
+        <item name="wcf.acp.option.category.lotto.jcoins.jcoins"><![CDATA[{lang}wcf.jcoins.title{/lang}]]></item>
+        <item name="wcf.acp.option.category.lotto.jcoins.jcoins.description"><![CDATA[Please observe the legal regulations. At least in Germany it is not allowed to play a game of chance in which the participants have to pay a fee without authorization. A purely virtual fee in the form of {JCOINS_NAME} may be exempt from this rule if you can not buy {JCOINS_NAME} in your community.]]></item>
+        <item name="wcf.acp.option.category.lotto.playtime"><![CDATA[Playing Time]]></item>
+        <item name="wcf.acp.option.category.lotto.winningpayout"><![CDATA[Distribution Shares]]></item>
+        <item name="wcf.acp.option.category.lotto.winningpayout.winclass"><![CDATA[WinClass]]></item>
+        <item name="wcf.acp.option.category.lotto.winningpayout.winclass.description"><![CDATA[<strong>Info:</strong> For the calculation of the distribution shares of the individual classes, the total profit amount for the profit class 9 is determined first. From the remaining prize money, the doping is calculated in the first prize class. Only now will the remaining payout percentage be distributed to profit levels 2-8 according to percentage rules.<br /><strong>IMPORTANT: </strong> Win class 2 through win class 8 must not exceed 100%.]]></item>
+        <item name="wcf.acp.option.jcoins_lottoAdd"><![CDATA[Lottery ticket (1 field)]]></item>
+        <item name="wcf.acp.option.jcoins_lottoAdd.description"><![CDATA[Costs for a lottery ticket (1 field).]]></item>
+        <item name="wcf.acp.option.jcoins_lottoAddAdditionalField"><![CDATA[Extra field]]></item>
+        <item name="wcf.acp.option.jcoins_lottoAddAdditionalField.description"><![CDATA[Costs for each additional field on the lottery ticket.]]></item>
+        <item name="wcf.acp.option.lotto_draw_activate"><![CDATA[Activate]]></item>
+        <item name="wcf.acp.option.lotto_jackpot_reset"><![CDATA[Reset jackpot]]></item>
+        <item name="wcf.acp.option.lotto_jackpot_reset.description"><![CDATA[If you want to reset the jackpot after each draw?]]></item>
+        <item name="wcf.acp.option.lotto_new_jackpot"><![CDATA[New jackpot]]></item>
+        <item name="wcf.acp.option.lotto_new_jackpot.desciption"><![CDATA[JCoins of the new jackpot after a reset.]]></item>
+        <item name="wcf.acp.option.lotto_play_date"><![CDATA[Weekday]]></item>
+        <item name="wcf.acp.option.lotto_play_date.description"><![CDATA[On which day of the week should the lottery be played?]]></item>
+        <item name="wcf.acp.option.lotto_play_time"><![CDATA[Time of day]]></item>
+        <item name="wcf.acp.option.lotto_play_time.description"><![CDATA[When should the draw take place?<br /><br /><strong>Important:</strong> Changes will only take effect after the next draw!]]></item>
+        <item name="wcf.acp.option.lotto_ticket_to_jackpot"><![CDATA[Use jackpot]]></item>
+        <item name="wcf.acp.option.lotto_ticket_to_jackpot.description"><![CDATA[How much% of the ticket bet should go into the jackpot?]]></item>
+        <item name="wcf.acp.option.lotto_warning"><![CDATA[Show warning about gambling addiction]]></item>
+        <item name="wcf.acp.option.lotto_winclass1"><![CDATA[WinClass 1]]></item>
+        <item name="wcf.acp.option.lotto_winclass1.description"><![CDATA[Six correct and super number (Jackpot)]]></item>
+        <item name="wcf.acp.option.lotto_winclass2"><![CDATA[WinClass 2]]></item>
+        <item name="wcf.acp.option.lotto_winclass2.description"><![CDATA[Six right]]></item>
+        <item name="wcf.acp.option.lotto_winclass3"><![CDATA[WinClass 3]]></item>
+        <item name="wcf.acp.option.lotto_winclass3.description"><![CDATA[Five right with super number]]></item>
+        <item name="wcf.acp.option.lotto_winclass4"><![CDATA[WinClass 4]]></item>
+        <item name="wcf.acp.option.lotto_winclass4.description"><![CDATA[Five right]]></item>
+        <item name="wcf.acp.option.lotto_winclass5"><![CDATA[WinClass 5]]></item>
+        <item name="wcf.acp.option.lotto_winclass5.description"><![CDATA[Four right with super number]]></item>
+        <item name="wcf.acp.option.lotto_winclass6"><![CDATA[WinClass 6]]></item>
+        <item name="wcf.acp.option.lotto_winclass6.description"><![CDATA[Four right]]></item>
+        <item name="wcf.acp.option.lotto_winclass7"><![CDATA[WinClass 7]]></item>
+        <item name="wcf.acp.option.lotto_winclass7.description"><![CDATA[Three right with super number]]></item>
+        <item name="wcf.acp.option.lotto_winclass8"><![CDATA[WinClass 8]]></item>
+        <item name="wcf.acp.option.lotto_winclass8.description"><![CDATA[Three right]]></item>
+        <item name="wcf.acp.option.lotto_winclass9"><![CDATA[WinClass 9]]></item>
+        <item name="wcf.acp.option.lotto_winclass9.description"><![CDATA[Two right with super number. (fixed price)<br /><strong>Note:</strong> Value should not exceed half of the cost for 1 lottery ticket.]]></item>
+        <item name="wcf.acp.option.lottotickets_per_page"><![CDATA[Lottery tickets per page]]></item>
+        <item name="wcf.acp.option.module_lotto"><![CDATA[Lotto]]></item>
+        <item name="wcf.acp.option.suffix.lotto.clock"><![CDATA[Clock]]></item>
+        <item name="wcf.acp.option.suffix.lotto.jcoins"><![CDATA[{JCOINS_NAME}]]></item>
+    </category>
+    
+    <category name="wcf.jcoins.statement">
+        <item name="wcf.jcoins.statement.title.info.daries.lotto.transfer"><![CDATA[Lotto]]></item>
+        <item name="wcf.jcoins.statement.reason.info.daries.lotto.transfer"><![CDATA[{if $statement->type == 'buy'}Your have bought a lottery ticket „{$statement->getObject()->ticketNumber}“ with {@$statement->fields} field{if $statement->fields != 0}s{/if}{/if}{if $statement->type == 'win'}Your ticket „{$statement->getObject()->ticketNumber}“ has won the lottery.{/if}]]></item>
+    </category>
+    
+    <category name="wcf.lotto">
+        <item name="wcf.lotto.block.count"><![CDATA[Tick still <span>6</span> figures.]]></item>
+        <item name="wcf.lotto.block.title"><![CDATA[Lotto field ]]></item>
+        <item name="wcf.lotto.button.allFieldRemove"><![CDATA[Delete fields]]></item>
+        <item name="wcf.lotto.button.fieldShuffle"><![CDATA[Random numbers]]></item>
+        <item name="wcf.lotto.button.submit"><![CDATA[Buy]]></item>
+        <item name="wcf.lotto.button.submit.next"><![CDATA[Buy + Next lottery ticket]]></item>
+        <item name="wcf.lotto.button.ticketAdd"><![CDATA[Buy lottery ticket]]></item>
+        <item name="wcf.lotto.copyright"><![CDATA[<strong>Lotto</strong>, developed by <a href="https://daries.info"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}><strong>Marco Daries</strong></a>]]></item>
+        <item name="wcf.lotto.day"><![CDATA[Days]]></item>
+        <item name="wcf.lotto.error.coins"><![CDATA[You do not have enough JCoins to buy a lottery ticket.]]></item>
+        <item name="wcf.lotto.hour"><![CDATA[Hours]]></item>
+        <item name="wcf.lotto.info"><![CDATA[Game participation from 18 years. Gambling can be addictive. For more information, please visit <a href="https://www.spielen-mit-verantwortung.de" target="_blank">www.spielen-mit-verantwortung.de</a> or call 0800 137 27 00.]]></item>
+        <item name="wcf.lotto.jCoins"><![CDATA[Cost lottery ticket]]></item>
+        <item name="wcf.lotto.jCoins.lottoAdd"><![CDATA[Cost Lotto ticket (1st field)]]></item>
+        <item name="wcf.lotto.jCoins.lottoAddAdditionalField"><![CDATA[Each additional field]]></item>
+        <item name="wcf.lotto.lottoField"><![CDATA[Fill in lottery ticket {$blockID} - Click here]]></item>
+        <item name="wcf.lotto.minute"><![CDATA[Minutes]]></item>
+        <item name="wcf.lotto.nextTicket"><![CDATA[Next lottery ticket]]></item>
+        <item name="wcf.lotto.notPlay"><![CDATA[This lottery ticket has not been played yet!]]></item>
+        <item name="wcf.lotto.notWin"><![CDATA[You have not won anything with this ticket.]]></item>
+        <item name="wcf.lotto.pay"><![CDATA[Buy: {$time|date} ({$costCoins} {JCOINS_NAME})]]></item>
+        <item name="wcf.lotto.previousTicket"><![CDATA[Previous lottery ticket]]></item>
+        <item name="wcf.lotto.randomFields"><![CDATA[Random fields:]]></item>
+        <item name="wcf.lotto.second"><![CDATA[Seconds]]></item>
+        <item name="wcf.lotto.stats.stat1"><![CDATA[Played numbers]]></item>
+        <item name="wcf.lotto.stats.stat2"><![CDATA[Drawn numbers]]></item>
+        <item name="wcf.lotto.ticket.additionalNumber"><![CDATA[Additional number]]></item>
+        <item name="wcf.lotto.ticket.draw"><![CDATA[Draw]]></item>
+        <item name="wcf.lotto.ticket.number"><![CDATA[Number]]></item>
+        <item name="wcf.lotto.ticket.remove.all"><![CDATA[Delete tickets]]></item>
+        <item name="wcf.lotto.ticket.remove.confirmMessage"><![CDATA[Do you really want to delete all played lottery tickets?]]></item>
+        <item name="wcf.lotto.ticket.winClass"><![CDATA[WinClass]]></item>
+        <item name="wcf.lotto.ticketHeadline"><![CDATA[Receipt ID: {$ticketID}]]></item>
+        <item name="wcf.lotto.ticketNumber"><![CDATA[Lottery ticket number: {@$ticketNumber}]]></item>
+        <item name="wcf.lotto.wait"><![CDATA[Not played yet!]]></item>
+        <item name="wcf.lotto.win"><![CDATA[You have won with this ticket {$ticket->winCoins} {JCOINS_NAME}.]]></item>
+        <item name="wcf.lotto.win.true"><![CDATA[Your won {$ticket->winCoins} {JCOINS_NAME}.]]></item>
+        <item name="wcf.lotto.win.false"><![CDATA[You have not won anything.]]></item>
+        <item name="wcf.lotto.winClass"><![CDATA[WinClasses]]></item>
+    </category>
+    
+    <category name="wcf.user.notification">
+        <item name="wcf.user.notification.info.daries.lotto"><![CDATA[Lotto]]></item>
+        <item name="wcf.user.notification.info.daries.lotto.notification.lottoLose"><![CDATA[Lost with a lottery ticket]]></item>
+        <item name="wcf.user.notification.info.daries.lotto.win.notification.lottoWin"><![CDATA[Won a lottery ticket]]></item>
+        <item name="wcf.user.notification.lottoLose.title"><![CDATA[One of your lottery tickets did not win]]></item>
+        <item name="wcf.user.notification.lottoLose.message"><![CDATA[Lost with lottery ticket number: "{@$lottoTicket->ticketNumber}"]]></item>
+        <item name="wcf.user.notification.lottoLose.mail"><![CDATA[You did not win with your lottery ticket number "{@$lottoTicket->ticketNumber}".
+
+{link controller='LottoTicket' id=$lottoTicket->ticketID}{/link}]]></item>
+        <item name="wcf.user.notification.lottoWin.title"><![CDATA[One of your lottery tickets won]]></item>
+        <item name="wcf.user.notification.lottoWin.message"><![CDATA[Won with lottery ticket number: "{@$lottoTicket->ticketNumber}"]]></item>
+        <item name="wcf.user.notification.lottoWin.mail"><![CDATA[You have won with your lottery ticket number "{@$lottoTicket->ticketNumber}".
+
+{link controller='LottoTicket' id=$lottoTicket->ticketID}{/link}]]></item>
+    </category>
+    
+    <category name="wcf.user.profile">
+        <item name="wcf.user.profile.recentActivity.lottoAdd"><![CDATA[Has bought a new lottery ticket.]]></item>
+    </category>
+    
+    <category name="wcf.user.recentActivity">
+        <item name="wcf.user.recentActivity.info.daries.lotto.recentActivityEvent.lottoAdd"><![CDATA[Lotto]]></item>
+    </category>
+</language>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/option.xsd">
+    <import>
+        <categories>
+            <category name="lotto">
+                <options>module_lotto</options>
+            </category>
+            <category name="lotto.general">
+                <parent>lotto</parent>
+                <showorder>1</showorder>
+            </category>
+            <category name="lotto.general.jackpot">
+                <parent>lotto.general</parent>
+                <showorder>1</showorder>
+            </category>
+            <category name="lotto.winningpayout">
+                <parent>lotto</parent>
+                <showorder>2</showorder>
+            </category>
+            <category name="lotto.winningpayout.winclass">
+                <parent>lotto.winningpayout</parent>
+                <showorder>1</showorder>
+            </category>
+            <category name="lotto.playtime">
+                <parent>lotto</parent>
+                <showorder>3</showorder>
+            </category>
+            <category name="lotto.jcoins">
+                <parent>lotto</parent>
+                <showorder>4</showorder>
+            </category>
+            <category name="lotto.jcoins.jcoins">
+                <parent>lotto.jcoins</parent>
+                <showorder>4</showorder>
+            </category>
+        </categories>
+        
+        <options>
+            <!-- module.community -->
+            <option name="module_lotto">
+                <categoryname>module.community</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <!-- /module.community -->
+            
+            
+            <!-- lotto.general -->
+            <option name="lottotickets_per_page">
+                <categoryname>lotto.general</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>30</defaultvalue>
+                <showorder>1</showorder>
+            </option>
+            <option name="lotto_warning">
+                <categoryname>lotto.general</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+                <showorder>3</showorder>
+            </option>
+            <!-- /lotto.general -->
+            
+            <!-- lotto.general.jackpot -->
+            <option name="lotto_ticket_to_jackpot">
+                <categoryname>lotto.general.jackpot</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>50</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>1</showorder>
+            </option>
+            <option name="lotto_jackpot_reset">
+                <categoryname>lotto.general.jackpot</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+                <enableoptions>lotto_new_jackpot</enableoptions>
+                <showorder>2</showorder>
+            </option>
+            <option name="lotto_new_jackpot">
+                <categoryname>lotto.general.jackpot</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>1000</defaultvalue>
+                <minvalue>0</minvalue>
+                <suffix>lotto.jcoins</suffix>
+                <showorder>3</showorder>
+            </option>
+            <!-- /lotto.general.jackpot -->
+            
+            <!-- lotto.winningpayout -->
+            <option name="lotto_winclass1">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>12</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>1</showorder>
+            </option>
+            <option name="lotto_winclass2">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>10</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>2</showorder>
+            </option>
+            <option name="lotto_winclass3">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>5</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>3</showorder>
+            </option>
+            <option name="lotto_winclass4">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>15</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>4</showorder>
+            </option>
+            <option name="lotto_winclass5">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>5</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>5</showorder>
+            </option>
+            <option name="lotto_winclass6">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>10</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>6</showorder>
+            </option>
+            <option name="lotto_winclass7">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>10</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>7</showorder>
+            </option>
+            <option name="lotto_winclass8">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>45</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>percent</suffix>
+                <showorder>8</showorder>
+            </option>
+            <option name="lotto_winclass9">
+                <categoryname>lotto.winningpayout.winclass</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>5</defaultvalue>
+                <minvalue>0</minvalue>
+                <suffix>lotto.jcoins</suffix>
+                <showorder>9</showorder>
+            </option>
+            <!-- lotto.winningpayout -->
+            
+            <!-- lotto.playtime -->
+            <option name="lotto_draw_activate">
+                <categoryname>lotto.playtime</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+                <showorder>1</showorder>
+                <enableoptions>lotto_play_date,lotto_play_time</enableoptions>
+            </option>
+            <option name="lotto_play_date">
+                <categoryname>lotto.playtime</categoryname>
+                <optiontype>select</optiontype>
+                <defaultvalue>saturday</defaultvalue>
+                <selectoptions><![CDATA[monday:wcf.date.day.monday
+tuesday:wcf.date.day.tuesday
+wednesday:wcf.date.day.wednesday
+thursday:wcf.date.day.thursday
+friday:wcf.date.day.friday
+saturday:wcf.date.day.saturday
+sunday:wcf.date.day.sunday]]></selectoptions>
+                <showorder>2</showorder>
+            </option>
+            <option name="lotto_play_time">
+                <categoryname>lotto.playtime</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>19</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>23</maxvalue>
+                <suffix>lotto.clock</suffix>
+                <showorder>3</showorder>
+            </option>
+            <!-- /lotto.playtime -->
+            
+            <!-- lotto.jcoins.jcoins -->
+            <option name="jcoins_lottoAdd">
+                <categoryname>lotto.jcoins.jcoins</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>50</defaultvalue>
+                <minvalue>1</minvalue>
+                <suffix>lotto.jcoins</suffix>
+                <showorder>1</showorder>
+            </option>
+            <option name="jcoins_lottoAddAdditionalField">
+                <categoryname>lotto.jcoins.jcoins</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>10</defaultvalue>
+                <minvalue>1</minvalue>
+                <suffix>lotto.jcoins</suffix>
+                <showorder>2</showorder>
+            </option>
+            <!-- /lotto.jcoins.jcoins -->
+        </options>
+    </import>
+</data>

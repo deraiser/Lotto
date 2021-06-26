@@ -1,0 +1,46 @@
+.boxLottoNextDraw {
+    text-align: center;
+
+    .lottoCounter {
+        div {
+            @include lottoBackgroundColor;
+            @include lottoBorder(1px);
+
+            display: inline-block;
+            width: 23%;
+
+            height: 50px;
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+
+                margin-bottom: -5px;
+            }
+
+            small {
+                font-size: 8px;
+            }
+        }
+    }
+
+    .nextDraw {
+        margin-top: 10px;
+    }
+}
+
+.boxLottoJackpot {
+    .jackpot {
+        @include lottoBackgroundColor;
+        @include lottoBorder(1px);
+
+        display: block;
+        text-align: center;
+
+        font-size: 24px;
+        font-weight: 600;
+
+        height: 50px;
+        line-height: 50px;
+    }
+}

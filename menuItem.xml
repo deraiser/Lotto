@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/menuItem.xsd">
+    <import>
+        <item identifier="info.daries.lotto.Lotto">
+            <menu>com.woltlab.wcf.MainMenu</menu>
+            <title language="de">Lotto</title>
+            <title language="en">Lotto</title>
+            <page>info.daries.lotto.Lotto</page>
+        </item>
+        <item identifier="info.daries.lotto.LottoStatistik">
+            <parent>info.daries.lotto.Lotto</parent>
+            <title language="de">Statistik</title>
+            <title language="en">Statistik</title>
+            <page>info.daries.lotto.LottoStatistik</page>
+        </item>
+    </import>
+</data>

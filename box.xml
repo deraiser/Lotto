@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/box.xsd">
+    <import>
+        <box identifier="info.daries.lotto.ticketAdd">
+            <name language="de"><![CDATA[Lottoschein kaufen]]></name>
+            <name language="en"><![CDATA[Add lotto ticket]]></name>
+            <boxType>system</boxType>
+            <objectType>info.daries.lotto.ticketAdd</objectType>
+            <position>sidebarRight</position>
+            <showHeader>0</showHeader>
+            <visibleEverywhere>0</visibleEverywhere>
+            <visibilityExceptions>
+                <page>info.daries.lotto.Lotto</page>
+            </visibilityExceptions>
+			
+            <content language="de">
+                <title><![CDATA[Lottoschein kaufen]]></title>
+            </content>
+            <content language="en">
+                <title><![CDATA[Add lotto ticket]]></title>
+            </content>
+        </box>
+        <box identifier="info.daries.lotto.nextDraw">
+            <name language="de"><![CDATA[Nächste Ziehung]]></name>
+            <name language="en"><![CDATA[Next draw]]></name>
+            <boxType>system</boxType>
+            <objectType>info.daries.lotto.nextDraw</objectType>
+            <position>sidebarRight</position>
+            <showHeader>1</showHeader>
+            <visibleEverywhere>0</visibleEverywhere>
+            <visibilityExceptions>
+                <page>info.daries.lotto.Lotto</page>
+            </visibilityExceptions>
+			
+            <content language="de">
+                <title><![CDATA[Nächste Ziehung]]></title>
+            </content>
+            <content language="en">
+                <title><![CDATA[Next draw]]></title>
+            </content>
+        </box>
+        <box identifier="info.daries.lotto.jackpot">
+            <name language="de"><![CDATA[Lotto Jackpot]]></name>
+            <name language="en"><![CDATA[Lotto jackpot]]></name>
+            <boxType>system</boxType>
+            <objectType>info.daries.lotto.jackpot</objectType>
+            <position>sidebarRight</position>
+            <showHeader>1</showHeader>
+            <visibleEverywhere>0</visibleEverywhere>
+            <visibilityExceptions>
+                <page>info.daries.lotto.Lotto</page>
+            </visibilityExceptions>
+			
+            <content language="de">
+                <title><![CDATA[Lotto Jackpot]]></title>
+            </content>
+            <content language="en">
+                <title><![CDATA[Lotto jackpot]]></title>
+            </content>
+        </box>
+    </import>
+</data>

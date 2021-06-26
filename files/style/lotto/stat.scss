@@ -1,0 +1,31 @@
+.lottoStatList {
+    h3 {
+        text-align: center;
+    }
+    
+    > li {
+        display: inline-block;
+    }
+
+    .lottoStatField {
+        @include lottoBackgroundColor;
+        @include lottoBorder(1px);
+
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        margin: 5px;
+        float: left;
+        text-align: center;
+        padding-top: 4px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+            margin-top: 0px;
+        }
+    }
+}

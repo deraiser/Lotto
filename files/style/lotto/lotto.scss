@@ -1,0 +1,29 @@
+.lottoCopyright {
+    text-align: right;
+    font-size: 8px;
+    padding: 10px;
+}
+
+.lottoList{
+    > li {
+        @include lottoBackgroundColor;
+        @include lottoBorder(1px);
+        margin: 3px !important;
+        padding: 20px;
+
+        @include screen-md-up {
+            flex: 0 0 calc(98% / 3) !important;
+            width: calc(98% / 3) !important;
+        }
+
+        .containerContent {
+            li {
+                font-size: 12px;
+
+                &:not(:first-child) {
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}

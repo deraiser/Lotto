@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS wcf1_lotto_draw;
+CREATE TABLE wcf1_lotto_draw (
+    drawID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    number1 INT(2) NOT NULL DEFAULT 0,
+    number2 INT(2) NOT NULL DEFAULT 0,
+    number3 INT(2) NOT NULL DEFAULT 0,
+    number4 INT(2) NOT NULL DEFAULT 0,
+    number5 INT(2) NOT NULL DEFAULT 0,
+    number6 INT(2) NOT NULL DEFAULT 0,
+    additionalNumber INT(2) NOT NULL DEFAULT 0,
+    drawTime INT(10) NOT NULL DEFAULT 0,
+    drawn TINYINT(1) NOT NULL DEFAULT 0,
+    jackpot INT(10) NOT NULL DEFAULT 0
+);

@@ -1,0 +1,1 @@
+<div class="formSubmit"><a href="{link controller='LottoTicketAdd'}{/link}" class="button buttonPrimary">{lang}wcf.lotto.button.ticketAdd{/lang}</a></div>
