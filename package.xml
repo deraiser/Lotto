@@ -2,8 +2,8 @@
 <package name="info.daries.lotto" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">    
     <packageinformation>
         <packagename>Lotto</packagename>
-        <version>2.0.4</version>
-        <date>2021-06-25</date>
+        <version>2.0.5</version>
+        <date>2021-07-28</date>
         <license><![CDATA[Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) <https://creativecommons.org/licenses/by-nd/4.0/>]]></license>
     </packageinformation>
 	
@@ -18,7 +18,7 @@
     </requiredpackages>
     
     <excludedpackages>
-        <excludedpackage version="5.4.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="5.5.0 Alpha 1">com.woltlab.wcf</excludedpackage>
     </excludedpackages>
 	
     <instructions type="install">
@@ -49,7 +49,7 @@
         <instruction type="language" />
     </instructions>
     
-    <instructions type="update" fromversion="2.0.3">
+    <instructions type="update" fromversion="2.0.4">
         <instruction type="file" />
     </instructions>
 </package>
