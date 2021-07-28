@@ -47,7 +47,9 @@
             }
 
             .lottoFieldBlock {
-                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1px;
             }
 
             .lottoFieldBGNumber {
@@ -75,11 +77,8 @@
             .lottoFields {
                 @include lottoBorder(1px);
 
-                position: relative;
-                display: block;
-                float: left;
-                width: 9px;
-                height: 9px;
+                height: 10px;
+                flex: 0 0 10px;
                 margin: 0.1em;
 
                 &.selectedField {
